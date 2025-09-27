@@ -4,91 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instalaciones WKW - Cámaras de Seguridad</title>
-  <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background:#f3f4f6; color:#333; }
-    header { background:#0f172a; color:white; padding:30px 20px; text-align:center; }
-    header h1 { margin:0; font-size:2.5rem; }
-    header p { margin:5px 0 20px; }
-    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
-    section { padding:50px 20px; max-width:1200px; margin:auto; }
-    h2 { text-align:center; margin-bottom:30px; font-size:2rem; }
-    
-    .productos { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
-    .card { background:white; border-radius:16px; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; text-align:center; }
-    .card:hover { transform: translateY(-5px); }
-    .card img { max-width:100%; border-radius:12px; margin-bottom:15px; }
-    .precio { font-size:1.2rem; color:#2563eb; font-weight:bold; }
-    
-    .whatsapp-btn {
-      display:inline-block; 
-      background:#25d366; 
-      color:white; 
-      padding:12px 25px; 
-      border-radius:50px; 
-      text-decoration:none; 
-      font-weight:bold;
-      transition:0.3s;
-    }
-    .whatsapp-btn:hover { background:#1da851; }
-
-    footer { background:#0f172a; color:white; text-align:center; padding:20px; margin-top:30px; }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
+    <h1>Instalaciones WKW</h1>
+    <p>Venta e instalación de cámaras de seguridad</p>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>Instalaciones WKW</h1>
-  <p>Venta e instalación de cámaras de seguridad</p>
-  <nav>
-    <a href="#productos">Productos</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
-
-<section id="productos">
-  <h2>Productos Destacados</h2>
-  <div class="productos">
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200.png?text=Cámara+HD" alt="Cámara HD">
-      <h3>Cámara HD 1080p</h3>
-      <p>Visión nocturna y resistente al agua.</p>
-      <p class="precio">RD$ 3,500</p>
+  <section id="productos">
+    <h2>Productos Destacados</h2>
+    <div class="productos">
+      <div class="card">
+        <img src="img/camara_hd.jpg" alt="Cámara HD">
+        <h3>Cámara HD 1080p</h3>
+        <p>Visión nocturna y resistente al agua.</p>
+        <p class="precio">RD$ 3,500</p>
+        <a href="https://wa.me/18094393928" target="_blank" class="btn-compra">Comprar por WhatsApp</a>
+      </div>
+      <div class="card">
+        <img src="img/camara_ip_wifi.jpg" alt="Cámara IP">
+        <h3>Cámara IP WiFi</h3>
+        <p>Control desde tu celular en tiempo real.</p>
+        <p class="precio">RD$ 4,200</p>
+        <a href="https://wa.me/18094393928" target="_blank" class="btn-compra">Comprar por WhatsApp</a>
+      </div>
+      <div class="card">
+        <img src="img/kit_4_camaras.jpg" alt="Kit 4 Cámaras">
+        <h3>Kit 4 Cámaras</h3>
+        <p>Incluye DVR, instalación básica y soporte.</p>
+        <p class="precio">RD$ 12,500</p>
+        <a href="https://wa.me/18094393928" target="_blank" class="btn-compra">Comprar por WhatsApp</a>
+      </div>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200.png?text=Cámara+IP+WiFi" alt="Cámara IP">
-      <h3>Cámara IP WiFi</h3>
-      <p>Control desde tu celular en tiempo real.</p>
-      <p class="precio">RD$ 4,200</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200.png?text=Kit+4+Cámaras" alt="Kit Cámaras">
-      <h3>Kit 4 Cámaras</h3>
-      <p>Incluye DVR, instalación básica y soporte.</p>
-      <p class="precio">RD$ 12,500</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="servicios">
-  <h2>Servicios</h2>
-  <ul>
-    <li>Instalación de cámaras de seguridad</li>
-    <li>Configuración de acceso remoto</li>
-    <li>Mantenimiento preventivo y correctivo</li>
-  </ul>
-</section>
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Instalación de cámaras de seguridad</li>
+      <li>Configuración de acceso remoto</li>
+      <li>Mantenimiento preventivo y correctivo</li>
+    </ul>
+  </section>
 
-<section id="contacto" style="text-align:center;">
-  <h2>Contáctanos</h2>
-  <p>📞 Tel: 809-439-3928</p>
-  <p>📧 Email: info@instalacioneswkw.com</p>
-  <a href="https://wa.me/18094393928" target="_blank" class="whatsapp-btn">💬 Escríbenos por WhatsApp</a>
-</section>
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>📞 Tel: 809-439-3928</p>
+    <p>📧 Email: info@instalacioneswkw.com</p>
+    <a href="https://wa.me/18094393928" target="_blank" class="whatsapp-btn">💬 Escríbenos por WhatsApp</a>
+  </section>
 
-<footer>
-  <p>&copy; 2025 Instalaciones WKW | Todos los derechos reservados</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Instalaciones WKW | Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
